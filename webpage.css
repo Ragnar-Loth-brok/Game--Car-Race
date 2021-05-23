@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: comic san ms;
+}
+body{
+    background: url(background.jpg);
+    /* background-size: contain; */
+}
+.popup{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 600px;
+    height:400px;
+    background: url(animated.jpg);
+    border-radius: 20px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.popup h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5rem;
+    color: slateblue;
+}
+.popup p{
+    text-align: center;
+    font-size: 2rem;
+    color: snow;
+    animation: scaleAnimation 1s linear infinite;
+}
+@keyframes scaleAnimation{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.9);
+    }
+    45%{
+        transform: scale(0.8);
+    }
+    75%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+    /* 100%{
+        transform: scale(1);
+    } */
+}
+
+.road{
+    position: relative;
+    width: 430px;
+    height: 100vh;
+    margin: auto;
+    /* background: rgba(46, 49, 49, 1); */
+    background: linear-gradient(to right, #17242a,  #535c64,#2d394c, #434c50, #34385c);
+    overflow: hidden;
+    border-left: 5px solid yellowgreen;
+    border-right: 5px solid yellowgreen;
+}
+.line{
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background: #fff;
+    left: 211px;
+}
+.enemy{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+}
+.player{
+    position: absolute;
+    bottom: 80px;
+    left: 165px;
+    width: 64px;
+    height: 96px;
+}
